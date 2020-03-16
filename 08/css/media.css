@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* 반응형 */
+
+/* 모바일 대응 ( 414*869 ) */
+
+@media all and (max-width:1080px) { 
+
+    body { font-size: 14px;}
+
+    .logo {
+        bottom: 10%;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+    }
+    .intro .title {
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .intro .title h2 {
+        padding-bottom: 20px;
+        font-size: 32px;
+        line-height: 125%;
+    }
+    .intro .title p {
+        padding: 8px 0 10px 0;
+        font-size: 14px;
+        line-height: 125%;
+    }
+
+    .c-glitch { width: 92%;}
+    .c-glitch, .c-glitch__img { background-position: center center;}
+
+    .lead p {
+        font-size: 14px;
+        padding: 30px;
+        width: 80%;
+        border: 6px solid #fff;
+    }
+
+    .content { width: 80%;}
+    .content h2 { font-size: 24px; line-height: 140%;}
+    .content h2::before { width: 14px; height: 14px;}
+
+    .survey { width: 80%;}
+    .survey > p { font-size: 18px; line-height: 140%;}
+    .answer input { font-family: 'NotoSansCJKkr-Regular', sans-serif; font-size: 14px;}
+
+    .outro-wrap { width: 80%;}
+    .outro-wrap > p { font-size: 14px;}
+
+}
+
+
+
+
+
+

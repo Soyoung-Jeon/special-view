@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* 반응형 */
+
+/* 모바일 대응 ( 414*869 ) */
+
+@media all and (max-width:1080px) { 
+
+    .logo {
+        bottom: 10%;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+    }
+    .intro .title {
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .intro .title h2 {
+        padding-bottom: 20px;
+        font-size: 48px;
+        line-height: 125%;
+    }
+    .intro .title p {
+        padding: 8px 0 10px 0;
+        font-size: 14px;
+        line-height: 125%;
+    }
+    .survey { padding: 40px 0; height: auto;}
+    fieldset { 
+        padding: 24px; 
+        margin: 0 auto; 
+        width: 90%; 
+        box-sizing: border-box;
+        position: unset;
+        top: 0;
+        left: 0;
+        transform: translate(0%, 0%);
+    }
+    .popUp-box { width: 200px;}
+    
+    .popUp-box h3 { padding: 60px 20px 30px 20px;}
+    .popUp-box h3 > br { display: block;}
+    .popUp-box p {  padding: 30px 18px;}
+
+    .list-wrap h3 { font-size: 20px;}
+    .list-wrap > p { font-size: 12px;  padding: 20px 0 20px 0;}
+    .list-wrap > p > br { display: none;}
+    .list-wrap li { padding-bottom: 20px; height: 40px; font-size: 14px;}
+    .list-wrap li .question { float: none; font-size: 13px; line-height: 125%;}
+    .list-wrap li .check { padding-top: 5px; font-size: 12px; float: none; text-align: right;}
+
+    .list-sum { padding: 20px 0 30px 0;}
+    .list-sum > div { font-size: 14px;}
+    .list-sum #score { width: 20px; font-size: 14px;}
+
+    .list-btn ul li a {
+        padding: 2px 30px;
+        font-family: 'SCDreamB';
+        font-size: 12px;
+    }
+    .lead { padding: 60px 0;}
+    .lead p { width: 80%; font-size: 14px;}
+    .lead p::before {  margin: 0 auto 30px auto;}
+
+    section h2 > span { margin: 0 auto; width: 80%; font-size: 32px; line-height: 130%;}
+    .content { padding-top: 80px; width: 80%;}
+    section h3 { margin-bottom: 20px; font-size: 18px; line-height: 160%;}
+
+    .text { font-size: 12px;}
+    .finish { padding: 80px 0; font-size: 14px;}
+
+    .outro { padding: 60px 0; }
+    .outro > p { width: 80%;  font-size: 14px;}
+    .outro > p::after { margin: 30px auto 0px auto;}
+
+    .outro .btn-wrap { width: 80%;}
+    .outro .btn-wrap > a { padding: 8px 0; font-size: 12px;}
+
+    .rel-wrap { width: 80%;}
+    .rel-wrap > ul li { 
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+    }
+}
+
+
+
+
+
+

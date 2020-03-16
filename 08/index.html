@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>특집기사 - 고독사, 그들이 살던 세상</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.6, minimum-scale=1.0">
+    
+    <!-- 페이스북 공유 정보 -->
+    <meta property="og:title" content=""></meta>
+    <meta property="og:url" content=""></meta>
+    <meta property="og:description" content=""></meta>
+    <meta property="og:image" content="img/img_share.PNG"></meta> 
+
+    <link href='css/reset.css' type='text/css' rel='stylesheet'>
+    <link href='css/style.css' type='text/css' rel='stylesheet'>
+    <link href='css/intro.css' type='text/css' rel='stylesheet'>
+    <link href='css/media.css' type='text/css' rel='stylesheet'>
+
+    <link rel="shortcut icon" href="img/papapa.ico">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <!-- 카카오톡 공유 스크립트 -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- 인트로 -->
+        <div class="intro">
+            <div class="c-glitch">
+                <div class="c-glitch__img"></div>
+                <div class="c-glitch__img"></div>
+                <div class="c-glitch__img"></div>
+                <div class="c-glitch__img"></div>
+                <div class="c-glitch__img"></div>
+            </div>
+            <div class="logo"><img src="img/logo.png" alt="logo"></div>
+            <div class="title">
+                <h2>고독사,<br>그들이 살던 세상</h2>
+                <p>홀로 시들어가는 사람들</p>
+            </div>
+        </div>
+            
+        <!-- 리드 -->
+        <div class="lead">
+            <p>     
+                고독사가 심각한 사회문제로 대두되고 있다. 1인 가구가 빠르게 증가하는 상황과 맞물려 가족, 사회와 단절된 채 떨어져 살다가 아무도 모르게 죽음에 이르러 오랫동안 시신이 방치되는 경우가 심심치 않게 발생하고 있다.
+                <br><br>
+                보건복지부에 따르면 지난해 약 2,000여 명이 고독사로 사망한 것으로 나타났다. 연령대별로는 50대가 29%로 가장 많았고 60대(17.7%), 40대(17%)가 뒤를 이었다. 30대 이하 청년층도 6.2%를 보였다.
+                <br><br>
+                일반적으로 고독사는 노인들만의 문제로 각인돼왔으나 이제는 전 연령층의 문제로 다뤄야한다는 목소리가 나오고 있다.
+                <br><br>
+                정부를 비롯해 여러 기관 및 단체가 기부·행사 등 다양한 형태로 도움의 손길을 전하고 있으나 고독사를 막기에는 역부족이다.
+            </p>
+        </div>
+
+        <!-- 섹션 -->
+        <div class="section-wrap">
+
+            <!-- 01 -->
+            <section id="section-01" class="section white">
+                <div class="survey">
+                    <p>Q : <span>지난해</span> 우리나라에서 <span>고독사</span>로 몇명이나 사망했는지 아시나요?</p>
+                    <form action="javascript:;" autocomplete="off">
+                        <p class="question">
+                            <input type="text" id="answerBox" value="" placeholder="숫자를 입력하세요." maxlength="10">
+                        </p>
+                        <p class="answer">
+                            <input type="submit" id="submitBt" value="확인하기">
+                        </p>
+                    </form>    
+                </div>   
+                <div id="startTop" class="content">
+                    <div class="chart"><img src="img/tableau1.png" alt="태블로 차트"></div>
+                    <p class="text">
+                        보건복지부에 따르면 지난해 고독사 사망자 수는 2,549명으로 집계됐다. 고독사 사망자 수는 ▲2013년(1,271명) ▲2014년(1,379명) ▲2015년(1,676명) ▲2016년(1,820명) ▲2017년(2,008명) 순으로 매해 증가하고 있다.
+                        <br><br>
+                        현재 우리나라에는 고독사에 대한 정확한 수치나 통계가 없다. 통계청과 보건복지부의 1인 가구 현황 및 무연고 사망자 통계 등을 통해 간접적으로 고독사 수치를 가늠하고 있을 뿐이다.
+                    </p>   
+                </div>
+            </section>
+
+            <!-- 02 -->
+            <section id="section-02" class="section">
+                <div class="content">
+                    <h2>'무연사회' 고립된 중장년층</h2>
+                    <p class="text" style="padding-bottom: 20px;">
+                        흔히 고독사가 독거노인에게 주로 일어난다고 생각하지만 실제론 중장년층에게서 가장 빈번하게 발생한다.
+                    </p>
+                    <div class="chart"><img src="img/tableau2.png" alt="태블로 차트"></div>
+                    <p class="text">
+                        보건복지부에 따르면 연령대별 고독사 사망 비율은 50대가 29%로 가장 많았다. 이어 60대(17.7%)와 40대(17%)가 뒤를 이었다.
+                        <br><br>
+                        전문가들은 중장년층 고독사의 원인으로 실직, 이혼 등 경제·사회적 실패를 꼽았다. 잘 나갈 땐 주변에 사람이 많지만, 상황이 안 좋아지면 어느새 혼자만 남게 된다는 것이다.
+                        <br><br>
+                        서울 한 원룸에서 거주하고 있는 박희준(가명, 53세)씨는 이혼 후 홀로 살아가고 있다. 그는 "사업에 실패한 것 하나만으로도 참담한데, 이혼까지 했다"며 "혼자 살아가는 것이 이렇게까지 우울할 줄은 몰랐다. 내가 이러다 쓰러지면 누가 알기나 할까 걱정된다"라고 말했다.
+                        <br><br>
+                        건설사를 다니는 최준성(가명, 59세)씨는 원주의 옥탑방에서 나 혼자 인생을 살아가고 있다. 그는 "외롭다. 너무 외롭다. 연락할 가족이 없고 친구도 없다"며 "출근하고 일하고 퇴근하고 집와서 밥먹는 것이 내 인생의 전부"라며 하소연했다.
+                        <br><br>
+                        앞으로가 더 문제다. 고독사 위험이 높은 1인 가구가 이미 보편적인 가구형태로 자리잡았고 계속 증가하고 있기 때문이다.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 03 -->
+            <section id="section-03" class="section white">
+                <div class="content">
+                    <h2>그들이 사는 세상, 독거노인 '삼중고'</h2>
+                    <p class="text" style="padding-bottom: 20px;">
+                        통계조차 정확하게 파악되지 않는 고독사가 증가하고 있는 원인은 고독고, 병고, 빈고의 삼중고를 홀로 겪으며 위태롭게 살아가고 있는 독거노인 인구가 급증하고 있기 때문이다.
+                    </p>
+                    <div class="chart"><img src="img/chart_01.gif" alt="chart"></div>
+                    <div class="chart"><img src="img/chart_02.gif" alt="chart"></div>
+                    <p class="text">
+                        통계청에 따르면 65세 이상 독거노인 가구는 2020년 151만2082가구로 전망되고 있으며 2030년에는 233만8354가구로 200만 가구를 훌쩍 넘어설 것으로 점쳐진다.
+                        <br><br>
+                        전체 노인 수는 2025년 1033만 명, 2035년 1475만 명으로 노인 1000만 시대를 맞이할 전망이 우세하다. 
+                        <br><br>
+                    </p> 
+                </div>
+                <div class="content">
+                  <div class="chart"><img src="img/tableau3.png" alt="태블로 차트"></div>
+                    <p class="text">
+                        한편, 독거노인들을 가장 힘들게 하고 있는 것은 외로움이었다.
+                        <br><br>
+                        박순희(가명, 86세) 할머니는 남편을 여의고 홀로 쓸쓸하게 살아가고 있다. 두 아들은 연락이 끊긴지 오래됐다. 부서지고 쇠약한 몸으로 외로움 속에서 위태롭게 살아가고 있다.
+                        <br><br>
+                        외로움에 이어 경제적 불안감이 뒤를 이었다.
+                        <br><br>
+                        시골 작은 마을의 권익선(가명, 72세) 할머니는 무너져가는 집을 고치기는커녕, 당장 살아가는 데 필요한 생활비 걱정을 하고 있다. 홀로 살아가는 데 드는 생활비를 벌기 위해 품삯 일을 시작했으나 턱없이 모자르다. 결국 25만원 의 기초노령연금으로 겨우 살아가고 있으며 앞으로 남은 생이 어둡기만 하다.
+                        <br><br>
+                        병고가 세 번째로 높은 비율을 차지했다.
+                        <br><br>
+                        김주익(가명, 87세) 할아버지는 걷지 못할 정도로 무릎이 좋지 않다. 이밖에 여러 가지 병세로 몸이 쇠약해져 끼니도 챙기지 못하고 병원조차 갈 수 없다. 도와줄 사람이나 찾는 사람이 한 명도 없는 무연고자이기 때문에 누군가의 도움 없이는 쉬운 일이 없다. 돈이 있어도 병원을 못가는데 돈마저도 없는 상황이다.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 04 -->
+            <section id="section-04" class="section">
+                <div class="content">
+                    <h2>젊어진 나홀로 죽음…청년 고독사 급증</h2>
+                    <p class="text" style="padding-bottom: 20px;">
+                        고독사는 병들고 쇠약한 노인에게만 국한되지 않는다. 이제는 20~30대 청년 고독사도 늘고 있다. 청년 고독사가 급증하는 가장 큰 원인으로는 1인 가구가 꼽힌다.
+                    </p>
+                    <div class="chart"><img src="img/chart_03.gif" alt="chart"></div>
+                    <p class="text">
+                        이들은 취업을 준비 중이거나 사회초년생을 구성돼있다. 그만큼 경제적으로 취약하다는 뜻이다. 실제 최근 일어난 청년 고독사 대부분이 가족과 떨어져 사는 취업준비생이었다. 전문가들은 장기적인 경기 침체와 1인 가구 증가가 사람들의 연결고리를 끊고 있다고 진단했다.
+                        <br><br>
+                        청년 고독사를 막기위해선 근본적인 원인으로 꼽히는 청년실업을 해결해야 한다. 그러나 단기간에 해결할 수 있는 문제가 아니기 때문에 장기적으로 대책 방안을 모색해 줄여나가야 한다.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- 아웃트로 -->
+        <div class="outro white">
+            <div class="outro-wrap">
+                <p>
+                    “누구요? 그런 사람 모르니까 연락하지 마세요”, “알아서 처리해주세요”
+                    <br><br>
+                    주민센터 직원이 고독사 사망자의 가족이나 친척에게 연락할 때 으레 듣는 말.
+                    <br><br>
+                    이들은 죽어서조차 외면당한다. 정말 고독한 죽음이다.
+                    <br><br>
+                    짧게는 1~2주 길게는 몇 개월 만에 시신이 발견돼 외롭고 쓸쓸한 죽음으로 주변을 안타깝게 하는 고독사.
+                    <br><br>
+                    지금 이 순간에도 누군가는 외로운 죽음을 맞이하고 있을지 모른다. 우리는 이대로 늘어나는 고독사 사망자 수를 지켜봐야만 하는 걸까.
+                </p>
+                <div class="btn-wrap">
+                    <a href="#" class="newsBt">기사로 돌아가기</a>
+                    <a href="#" class="homeBt">홈으로 가기</a>
+                </div>
+                <div class="share-wrap">
+                    <button type="button" class="share_facebook">페이스북 공유</button>
+                    <button type="button" class="share_twitter">트위터 공유</button>
+                    <button type="button" class="share_kakao">카카오톡 공유</button>
+                    <button type="button" class="share_url">URL 공유</button>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(".newsBt").click(() => {
+                window.top.location.href = "http://medicalreport.kr/news/view/220841"
+            })
+            $(".homeBt").click(() => {
+                window.top.location.href = "http://medicalreport.kr/"
+            })
+        </script>
+
+        
+        <!-- 클립보드 URL 복사 인풋 시작 -->
+        <input id="current_url" value="" style="position: absolute; top: 0; left: -1000px;">
+
+   </main>
+   
+   <script src="js/section.js"></script> 
+   <script src="js/share.js"></script>
+   
+</body>
+
+</html>

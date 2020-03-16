@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* 반응형 */
+
+/* 모바일 대응 ( 414*869 ) */
+
+@media all and (max-width:1080px){ 
+
+    nav { text-align: center; padding: 14px 20px; font-size: 14px;}
+    nav h2 { display: none;}
+    nav ul { display: block; width: 100%;}
+
+    #intro .title { width: 80%;}
+    #intro .title p { font-size: 20px;}
+    #intro .title h2 { padding: 10px 12px; font-size: 28px;}
+
+    .scrollBt span:nth-child(2) { display: none;}
+
+    .lead-wrap { width: 80%;}
+    .lead-wrap p { padding-top: 105px; font-size: 16px;}
+    .lead-wrap p::before { height: 40px; margin: 0 auto 30px;}
+
+    .section-title { height: 200px;}
+    .section-title > p {  padding-top: 80px; font-size: 40px;}
+
+    .bar-wrap { display: none;}
+    .bar-text8 > p { height: 80px; padding-top: 0px;}
+
+    .section-wrap { padding: 60px 0; width: 80%;}
+    .section-title { background-attachment: initial; background-position: center center !important;}
+    .contents-wrap { width: 100%;}
+    .contents-wrap h3 { margin: 24px 0 20px 0; padding: 4px 6px; font-size: 20px; line-height: 140%;}
+    .contents-wrap .h3-lead { padding-bottom: 40px; font-size: 16px;}
+    
+    .chart-wrap .title { font-size: 14px; line-height: 140%;}
+    .chart-wrap .title::before { margin-right: 10px; width: 12px; height: 12px; vertical-align: middle;}
+    .chart-wrap .text { font-size: 14px;}
+
+    .chart-wrap .chart { height: 100%; border: none;}
+
+    .blank { height: 80px;}
+    .blank p { padding: 0px; font-size: 14px;}
+    .blank p span { display: block; margin-right: 0px;}
+
+    .outro-wrap { width: 80%;}
+    .outro-wrap p { padding-top: 110px; font-size: 16px;}
+    .outro-wrap p::after { height: 40px;}
+
+    .homeBt { width: 100%;}
+
+    .goTopBt-wrap { display: none;}
+    
+    
+}
+
+
+@media all and (max-width:380px){ 
+    #intro .title p { font-size: 16px;}
+    #intro .title h2 { padding: 8px 12px 6px 12px; font-size: 24px;}
+    .lead-wrap p { padding-top: 80px;}
+    .outro-wrap p { padding-top: 90px;}
+    .outro-wrap p::after { margin: 30px auto;}
+}
+
+
+

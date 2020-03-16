@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>특집기사 - 나는 치매 환자 입니다</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.6, minimum-scale=1.0">
+
+    <link href='css/reset.css' type='text/css' rel='stylesheet'>
+    <link href='css/style.css' type='text/css' rel='stylesheet'>
+    <link href='css/media.css' type='text/css' rel='stylesheet'>
+
+    <link rel="shortcut icon" href="img/papapa.ico">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.ripples.js"></script>
+
+
+    <!-- 페이스북 공유 정보 -->
+    <meta property="og:title" content=""></meta>
+    <meta property="og:url" content=""></meta>
+    <meta property="og:description" content=""></meta>
+    <meta property="og:image" content="img/img_share.PNG"></meta> 
+
+    <!-- 카카오톡 공유 스크립트 -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <!-- 인트로 -->
+        <div class="intro">
+            <span></span>
+            <div class="logo"><img src="img/logo.png" alt="logo"></div>
+            <div class="title">
+                <h2>"나는 치매 환자 입니다"</h2>
+                <p>치매인식개선 프로젝트, 주문을 잊어버린 사람들</p>
+            </div>
+        </div>
+            
+        <!-- 설문 -->
+        <div class="survey">
+            <!-- 설문지 -->
+            <fieldset>
+                <div class="list-wrap">
+                    <h3>주관적 기억감퇴 설문</h3>
+                    <p>
+                        본 테스트는 치매 진단 필요성 여부를 확인하기 위한 테스트입니다.<br>
+                        다음 문항들을 읽으면서 일치하는 것에 체크해 주십시오.
+                    </p>
+                    <ol>
+                        <li>
+                            <div class="question">
+                                <span>01</span>자신의 기억력에 문제가 있다고 생각하십니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t1" id="yes1" class="yes" value="1"/>
+                                <label for="yes1">예</label>
+                                <input type="radio" name="question_t1" id="no1" class="no" value="0" />
+                                <label for="no1">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>02</span>기억력이 10년 전보다 나빠졌다고 생각하십니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t2" id="yes2" class="yes" value="1"/>
+                                <label for="yes2">예</label>
+                                <input type="radio" name="question_t2" id="no2" class="no" value="0" />
+                                <label for="no2">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>03</span>기억력이 같은 또래의 다른 사람들에 비해 나쁘다고 생각하십니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t3" id="yes3" class="yes" value="1"/>
+                                <label for="yes3">예</label>
+                                <input type="radio" name="question_t3" id="no3" class="no" value="0" />
+                                <label for="no3">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>04</span>기억력 저하로 인해 일상생활에 불편을 느끼십니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t4" id="yes4" class="yes" value="1"/>
+                                <label for="yes4">예</label>
+                                <input type="radio" name="question_t4" id="no4" class="no" value="0" />
+                                <label for="no4">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>05</span>최근에 일어난 일을 기억하는 것이 어렵습니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t5" id="yes5" class="yes" value="1"/>
+                                <label for="yes5">예</label>
+                                <input type="radio" name="question_t5" id="no5" class="no" value="0" />
+                                <label for="no5">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>06</span>며칠 전에 나눈 대화 내용을 기억하기 어렵습니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t6" id="yes6" class="yes" value="1"/>
+                                <label for="yes6">예</label>
+                                <input type="radio" name="question_t6" id="no6" class="no" value="0" />
+                                <label for="no6">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>07</span>며칠 전에 한 약속을 기억하기 어렵습니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t7" id="yes7" class="yes" value="1"/>
+                                <label for="yes7">예</label>
+                                <input type="radio" name="question_t7" id="no7" class="no" value="0" />
+                                <label for="no7">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>08</span>친한 사람의 이름을 기억하기 어렵습니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t8" id="yes8" class="yes" value="1"/>
+                                <label for="yes8">예</label>
+                                <input type="radio" name="question_t8" id="no8" class="no" value="0" />
+                                <label for="no8">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>09</span>물건 둔 곳을 기억하기 어렵습니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t9" id="yes9" class="yes" value="1"/>
+                                <label for="yes9">예</label>
+                                <input type="radio" name="question_t9" id="no9" class="no" value="0" />
+                                <label for="no9">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>10</span>이전에 비해 물건을 자주 잃어버립니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t10" id="yes10" class="yes" value="1"/>
+                                <label for="yes10">예</label>
+                                <input type="radio" name="question_t10" id="no10" class="no" value="0" />
+                                <label for="no10">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>11</span>집 근처에서 길을 잃은 적이 있습니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t11" id="yes11" class="yes" value="1"/>
+                                <label for="yes11">예</label>
+                                <input type="radio" name="question_t11" id="no11" class="no" value="0" />
+                                <label for="no11">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>12</span>가게에서 2-3가지 물건을 사려고 할 때 물건이름을 기억하기 어렵습니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t12" id="yes12" class="yes" value="1"/>
+                                <label for="yes12">예</label>
+                                <input type="radio" name="question_t12" id="no12" class="no" value="0" />
+                                <label for="no12">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>13</span>가스불이나 전기불 끄는 것을 기억하기 어렵습니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t13" id="yes13" class="yes" value="1"/>
+                                <label for="yes13">예</label>
+                                <input type="radio" name="question_t13" id="no13" class="no"value="0" />
+                                <label for="no13">아니오</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="question">
+                                <span>14</span>자주 사용하는 전화번호(자신 혹은 자녀의 집)를 기억하기 어렵습니까?
+                            </div>
+                            <div class="check">
+                                <input type="radio" name="question_t14" id="yes14" class="yes" value="1"/>
+                                <label for="yes14">예</label>
+                                <input type="radio" name="question_t14" id="no14" class="no" value="0" />
+                                <label for="no14">아니오</label>
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="list-sum">
+                        <div>
+                            <span>총점 :</span>
+                            <input type="text" id="score" name="sum" value="0" readonly=""/> / 14점
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="list-btn">
+                    <ul>
+                        <li class="chkYes" id="submit"><a id="btn_check" href="javascript:;">확인</a></li>
+                        <li class="chkNo" id="close"><a href="javascript:;">취소</a></li>
+                    </ul>
+                </div>
+            </fieldset>
+
+            <!-- 결과 팝업 -->
+            <div class="popUp-wrap">
+                <div class="popUp-box">
+                    <h3>
+                        당신의 점수는<br>
+                        <input type="text" id="score_pop" name="pop_sum"/>
+                        점 입니다.
+                    </h3>
+                    <p class="zero"><span>당신은 기억왕</span><br>체크리스트를 꼼꼼히 다시 살펴보세요.</p>
+
+                    <p class="one"><span>정상입니다.</span><br>자연스러운 현상입니다.</p>
+                    <p class="two"><span>정상입니다.</span><br>누구나 깜빡 할 수 있습니다.</p>
+                    <p class="three"><span>정상입니다.</span><br>단순한 건망증입니다.</p>
+                    <p class="four"><span>정상입니다.</span><br>일상생활에 문제가 되지 않는다면 일반적인 건망증상입니다.</span></p>
+                    <p class="five"><span>정상입니다.</span><br>스트레스나 빡빡한 스케줄이 일시적인 기억력 저하를 유발할 수 있어요.</p>
+
+                    <p class="six"><span>치매 초기의심</span><br>치매예방수칙을 통해 정밀한 자가진단을 해보세요.</p>
+                    <p class="seven"><span>치매 초기의심</span><br>장기간 지속된다면 인지기능검사를 한번 받아보는것을 추천합니다.</p>
+                    <p class="eight"><span>치매 초기의심</span><br>일상생활에 불편함을 느낀다면 인지기능검사를 받아보는건 어떨까요?</p>
+                    <p class="nine"><span>치매 초기의심</span><br>혹시 기억력이 떨어졌더라도 인지기능상의 문제가 없다면 정상입니다.</p>
+                    
+                    <p class="ten"><span>치매 초기증상</span><br>10년전과 비교 했을 때 자신의 기억력과 인지 능력에 차이가 없으면 단순한 건망증이라고 볼 수 있습니다.</p>
+                    <p class="eleven"><span>치매 초기증상</span><br>일상생활에 불편함을 겪는다면 가까운 보건소나 치매지원센터에서 면밀한 검사가 필요합니다.</p>
+                    <p class="twelve"><span>치매 초기증상</span><br>일상생활에 불편함을 겪거나 그밖의 이상 징후가 보인다면 가까운 병원의 치매 클리닉을 찾아 상담을 받아 보아야합니다.</p>
+                    <p class="thirteen"><span>치매 초기증상</span><br>일상생활에 불편함을 겪거나 그밖의 이상 징후가 보인다면 가까운 병원의 치매 클리닉을 찾아 상담을 받아 보아야합니다.</p>
+
+                    <p class="fourteen"><span>중증 치매증상</span><br>반드시 병원 치매 클리닉을 찾아 상담을 받아 보아야 합니다.</p>
+                    
+                    <a href="javascript:;" class="popUp_close">X</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 리드 -->
+        <div class="lead">
+            <p>
+                '친한 사람의 이름을 기억하기 어렵습니까?' 누군가는 이 질문에 답을 내놓지 못한다. 이름은 커녕 존재 자체를 모르는 경우도 있다. 저 사람이 누군지, 내가 왜 여기 서있는지 모르는 사람. 바로 치매 환자다.
+                <br><br> 
+                올해 통계청이 조사한 바에 따르면 알츠하이머 치매가 국내 사망원인 9위에 오르면서 사상 처음으로 10위권내에 진입했다. 급속한 고령화 진행으로 치매 환자는 계속 늘고 있지만 이렇다 할 치료법이나 획기적인 예방법은 나오지 않고 있어 그 심각성이 더해지고 있다.
+                <br><br> 
+                경증치매라 할지라도 완치가 불가능해 환자 입장에선 삶의 의욕이 저하될 수 밖에 없다. 이런 치매 환자들이 삶을 포기하고 아무런 두뇌 활동도 하지 않으면 치매 진행 속도가 빨라져 사망에 이르는 시간이 줄어든다.
+                <br><br> 
+                우리가 할 수 있는 일은 뭐가 있을까. 그렇다. 최소한 치매 환자들에게 삶의 끈을 놓지 않게 환경을 만들어 줘야 한다. 그 첫 단추가 치매인식개선이다.
+                <br><br> 
+                최근에는 '치매인식개선' 예방교육, 캠페인, 사회 공모전 등이 많이 열리며, 국가에서는 치매 문제를 개별 가정 차원이 아닌 국가 돌봄 차원으로 해결하기 위해 많은 노력을 하고 있다.
+                <br><br> 
+                이 가운데 메디컬리포트는 치매인식개선 프로젝트 '주문을 잊은 음식점'을 통해 치매의 현주소를 데이터로 살펴봤다.
+            </p>
+        </div>
+
+        <!-- 섹션 -->
+        <div class="section-wrap">
+            <section id="section-01" class="section">
+                <h2><span>"나도 치매는 처음이에요"</span></h2>
+
+                <div class="content">
+                    <h3>주문을 잊은 음식점 "우리도 할 수 있어요"</h3>
+                    <div class="img-wrap"><img src="img/img_01.JPG" alt="주문을 잊은 음식점"></div>
+                    <p class="text" style="padding-bottom: 60px;">
+                        주문을 잊은 음식점은 경증치매 노인들이 직접 주문을 받고 서빙하는 식당이다. 무려 20:1의 경쟁률을 뚫고 주문을 잊은 음식점 운영에 도전하게 된 경증 치매 5명은 "우리처럼 노력을 하면 진행 속도가 늦어진다는 것을 보여주고 싶다"며 의지를 내비췄다.
+                        <br><br>
+                        식당 오픈 초반에는 손님들이 거의 찾아오지 않아 경증 치매 노인들이 초조한 모습을 보였으나 식당은 곧 발디딜 틈 없을 정도로 붐볐다. 테이블이 모자라 합석을 하는 광경이 펼쳐지기도 했다.
+                        <br><br>
+                        이들은 손님을 맞이할 때 자리 배치, 주방에 주문을 전달할 때 메뉴를 다르게 말하는 등 소소한 실수를 보여주기도 했다. 또 메뉴판을 주지 않고 엉뚱한 안내문을 전달 하는 등 실수를 하기도 했다.
+                    </p>
+
+                    <div class="img-wrap"><img src="img/img_04.JPG" alt="주문을 잊은 음식점"></div>
+                    <div class="img-wrap"><img src="img/img_03.JPG" alt="주문을 잊은 음식점"></div>
+                    <p class="text">                        
+                        일반 식당이었다면 언짢을 수 있는 행동이지만, 이곳에선 그렇지 않았다. 그 누구도 인상 하나 찌푸리지 않고, 웃음으로 맞아줬다.
+                        <br><br>
+                        모든 영업이 끝난 후, 이틀 동안의 경험이 오래도록 기억될 것 같느냐는 질문에 다섯 치매인들은 "잊어버려도 어쩔 수 없다. 그래야 하는데 그걸 자신을 못 한다"라고 답했다.
+                    </p>
+                </div>
+
+                <div class="content">
+                    <h3>주문을 잊은 카페 "서툴러도 괜찮아"</h3>
+                    <div class="img-wrap"><img src="img/img_02.JPG" alt="주문을 잊은 음식점"></div>
+                    <p class="text">
+                        주문을 잊은 프로젝트에는 카페도 있다. 음식점보다 활발한 행보를 보이고 있다.
+                        <br><br>
+                        통영시는 지난달 7일 카페 도우(무전동 소재)에서 ‘주문을 잊은 카페’를 오픈했다. 이 카페에선 아메리카노를 주문했는데 자몽에이드가 나오기도 하고, 1잔을 주문했는데 3잔이 나오기도 한다. 그러나 손님들은 기분이 언짢기는커녕 미소를 짓는다.
+                        <br><br>
+                        이 사업은 통영시에서 치매노인 본인은 물론 그 가족들이 느끼는 무력감과 소외감을 조금이나마 덜어주고, 직접 사회활동을 하면서 스스로에 대한 자신감을 얻고 주변의 따뜻한 시선으로 다함께 어울릴 수 있는 기회를 만들기 위해 마련했다.
+                        <br><br>
+                        하남시도 하남 스타필드에서 지난 9월 '기억하지 못해도 괜찮은 축제'를 통해 치매인식개선에 동참했다.
+                        <br><br>
+                        또 한국동서발전과 내와동산 노인요양권, 울산대학교 LINC+ 사업단은 지난 4월 1호점 한국동서발전(주) 본사 1층 망고식스카페를 통해 치매인식개선 프로젝트를 시작했다. 이어 ▲5월(2호점 울산대학교 11호관 카페·3호점 울산시립도서관 2층 싱귤러카페)▲6월(4호점 커피마루 통영점)▲10월(5호점 히즈빈스 랩 포항점·6호점 핸즈커피 울산 성남점) 등 활발한 활동을 이어가고 있다.
+                    </p>
+
+                    <p class="finish">
+                        주문을 잊은 음식점·카페에서는 그들의 실수가 위험한 행동이 아닌, 당연한 것이라고 받아들여진다. 이는 치매 환자들에게 분명 긍정적인 효과를 일으킬 것이다.
+                        <br><br>
+                        그러나 주문을 잊은 음식점·카페 프로젝트가 치매 환자의 근본적인 문제를 해결할 수는 없다. '치매'라는 병 자체를 사라지게 할 순 없다는 뜻이다.
+                        <br><br>
+                        당장 눈 앞에 닥친 치매의 현실은 참담하다. 잠시 따뜻한 식당을 잊고, 치매의 현실을 살펴보자. 그리 달갑지는 않을 것이다.
+                    </p>
+                </div>
+
+                
+            </section>
+
+            <section id="section-02" class="section">
+                <h2><span>환자수에 사망자 수까지…치매, 모든 영역서 가속화</span></h2>
+
+                <div class="content">
+                    <h3>국내 10대 사망원인 첫 진입</h3>
+
+                    <p class="text" style="padding-bottom: 20px;">
+                        고령화가 급속도로 진행되면서 알츠하이머 치매가 처음으로 10대 사망원인에 포함됐다.
+                        <br><br>
+                        지난달 24일 통계청의 ‘사망원인통계’에 따르면 지난해 총 사망자 수는 29만8820명으로 1983년 관련 통계 작성 이후 가장 많았다.
+                        <br><br>
+                        이 가운데 치매의 일종인 알츠하이머병으로 사망한 사람은 인구 10만 명 당 12명으로 전체 사망원인 순위 9위로 나타났다. 2017년만 해도 알츠하이머병으로 사망한 사람은 10명이 채 안 됐지만 1년 만에 사망률이 22.5% 증가했다.
+                    </p>
+                    <div class="img-wrap"><img src="img/chart_01.gif"></div>
+                    <p class="text">
+                        작년 알츠하이머를 포함한 전체 치매 사망자 수는 6,156명으로 1년 전보다 22.67% 늘었다. 치매 사망자 수는 최근 5년간 ▲2014(4,399명)▲2015(5,033명)▲2016(4,822명)▲2017(5,018명) 순으로 집계됐다.
+                        <br><br>
+                        같은해 연령별 치매 사망자 수는 80대가 3,052명(남:916명·여:2,136명)으로 가장 많았다. 이어 ▲90대(2,140명)▲70대(793명)▲60대(142명)▲50대(28명)▲40대(1명) 등 순으로 나타났다. 최근 몇년간 60대, 70대, 80대 모두 사망자 수가 증가폭을 키우고 있다는 점이 눈에 띈다.
+                    </p>
+                </div>
+
+                <div class="content">
+                    <div class="img-wrap"><img src="img/chart_03.gif"></div>
+                    <div class="img-wrap"><img src="img/chart_02.gif"></div>
+                </div>
+                <div class="content" style="padding-top: 20px;">
+                    <p class="text">
+                        중앙치매센터에 따르면 올해 치매 환자수는 81만3475명으로 집계됐다. 이 가운데 80대 이상 치매 환자수는 49만6489명으로 가장 많았고 60대와 70대는 각각 5만6319명, 26만667명으로 나타났다. 특히 80대 이상 치매 환자수는 최근 몇년간 가파른 상승세를 보이고 있다.
+                       <br><br>
+                        2015년까지만 해도 36만6378명에 머물던 환자수는 2016년 39만5903명, 2017년 42만7115명, 2018년 45만9890명으로 증가하며 50만 명을 눈앞에 두고 있다.
+                        <br><br>
+                        올해 유형별 치매 환자수는 알츠하이머가 59만3525명으로 가장 많은 비율을 차지했다. 이어 혈관성 치매와 기타 치매가 각각 9만1286명, 12만8663명으로 나타났다. 유병률은 혈관성 치매가 75.86%로 가장 높았고 알츠하이머(19.85%), 기타 치매(4.29%)로 집계됐다.
+                        <br></br>
+                        80만 명을 넘어선 치매 환자수는 향후 더 늘어날 전망이다. 중앙치매센터에 따르면 60세 이상 기준 치매 환자수는 다음해 86만188명을 기록하며 오름세를 이어가, 2030년에는 139만3852명으로 100만 명을 웃돌 것으로 점쳐진다. 이어 2040년(220만412명), 2050년(304만7646명) 순으로 300만 명을 넘어설 것으로 분석됐다.
+                        <br><br>
+                        성별로는 여성이 남성보다 월등히 높았다. 남성은 2020년(33만6924명), 2030년(60만7105명), 2040년(98만8233명), 2050년(144만270명) 순으로 나타났다. 여성은 2020년(52만3264명), 2030년(78만6747명), 2040년(121만2179명), 2050년(160만7376명) 순으로 전망됐다. 
+                        <br><br>
+                        정확한 연구 결과가 나온 것은 아니지만 여성은 남성에 비해 스트레스를 발산할 기회가 적기 때문에 치매 발병률이 높다. 심한 스트레스를 장기간 받으면 횡경막과 늑골등이 굳어지면서 수축운동이 나빠지는데 그러면 폐의 활동이 원활치 않아서  뇌쪽에도 산소공급이 지장이 생겨 치매나 중풍 파킨슨 등의 질병들이 생길 수가 있다는 분석이다.
+                    </p>
+                  </div>
+               </div>
+            </section>
+        </div>
+
+        <!-- 아웃트로 -->
+        <div class="outro">
+            <p>
+                늦었다고 생각할 때, 늦은 것 조차 기억 못 한다
+                <br><br>
+                치매는 육체적인 죽음보다 정신적인 죽음이 먼저 온다. 약을 먹으면 어느정도 진행을 늦출 수 있지만 그뿐.
+                <br><br>
+                컴퓨터도 못하고 전화도 못 받게되고 물건 정리도 안된다. 급기야 아무것도 못하게 된다. 가족이 누군지 친구가 누군지 내가 누군지 최근의 기억부터 점점 다 지워지게 된다.
+                <br><br>
+                한번 손상된 뇌 신경 세포는 복구되지 않는다. 치매가 의심된다면 주저없이 당장 병원으로 가라. 늦었다고 생각할 때, 늦은 것조차 기억 못하기 전에.
+            </p>
+            <div class="btn-wrap">
+                <a href="#" class="newsBt">기사로 돌아가기</a>
+                <a href="#" class="homeBt">홈으로 가기</a>
+            </div>
+            <div class="share-wrap">
+                <button type="button" class="share_facebook">페이스북 공유</button>
+                <button type="button" class="share_twitter">트위터 공유</button>
+                <button type="button" class="share_kakao">카카오톡 공유</button>
+                <button type="button" class="share_url">URL 공유</button>
+            </div>
+            <div class="rel-wrap">
+                <p>관련 기사 더보기</p>
+                <ul>
+                    <li><a href="#" class="rel_01">- 치매의 절반이상 '알츠하이머' 원인과 증상, 가족력이 중요하다</a></li>
+                    <li><a href="#" class="rel_02">- 건망증? 치매? 등급판정에 의해 달라지는 치매 치료</a></li>
+                    <li><a href="#" class="rel_03">- 체어요가, 치매 환자 삶의 질 향상시키는 최고의 '비약물적 치료'</a></li>
+                    <li><a href="#" class="rel_04">- 치매 환자, 야외활동 같은 비약물적 치료로 증상 완화 효과 보여</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $(".newsBt").click(() => {
+                window.top.location.href = "http://medicalreport.kr/news/view/220764"
+            })
+            $(".homeBt").click(() => {
+                window.top.location.href = "http://medicalreport.kr/"
+            })
+            $(".rel_01").click(() => {
+                window.top.location.href = "http://medicalreport.kr/news/view/50385"
+            })
+            $(".rel_02").click(() => {
+                window.top.location.href = "http://medicalreport.kr/news/view/157906"
+            })
+            $(".rel_03").click(() => {
+                window.top.location.href = "http://medicalreport.kr/news/view/220633"
+            })
+            $(".rel_04").click(() => {
+                window.top.location.href = "http://medicalreport.kr/news/view/220677"
+            })
+        </script>
+
+        <!-- 클립보드 URL 복사 인풋 -->
+        <input id="current_url" value="" style="position: absolute; top: 0; left: -1000px;">
+   </main>
+
+   
+   <script src="js/section.js"></script> 
+   <script src="js/survey.js"></script>
+   <script src="js/share.js"></script>
+</body>
+
+</html>

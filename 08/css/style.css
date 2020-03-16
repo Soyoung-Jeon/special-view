@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+main { overflow: hidden; width: 100%; height: auto;}
+
+/* 리드 */
+.lead { padding: 100px 0; width: 100%; height: auto;}
+.lead p { 
+  font-family:'Joseonilbo', serif;
+    margin: 0 auto;
+    padding: 40px;
+    width: 680px; 
+    line-height: 160%; 
+    color: #fff;
+    box-sizing: border-box;
+    border: 10px solid #fff;
+    box-shadow: 12px 12px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* 섹션 */
+.section-wrap { width: 100%;  height: auto;}
+section { 
+  padding: 100px 0;
+  width: 100%; 
+  height: auto;
+}
+
+/* 서베이 */
+.survey {
+  padding: 40px;
+  font-size: 20px;
+  border: 10px solid #152c4b;
+  background-color: #fff;
+  box-shadow: 8px 8px 0 rgba(20, 41, 71, 0.2);
+  box-sizing: border-box;
+}
+.survey > p {
+  padding-bottom: 20px;
+  font-family:'NotoSansCJKkr-Regular';
+  color: #152c4b;
+  text-align: center;
+  border-bottom: 1px solid rgba(20, 41, 71, 0.2);
+}
+.survey > p > span { font-family:'NotoSansCJKkr-Bold', sans-serif;}
+
+.survey form { margin: 0 auto; width: 240px;}
+.question { padding: 24px 0 14px 0;}
+.question input { 
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 4px solid #152c4b;
+  font-family:'NotoSansCJKkr-Bold', sans-serif;
+  font-size: 18px;
+  color: #152c4b;
+  text-align: center;
+}
+.question input::placeholder { 
+  font-family:'NotoSansCJKkr-Regular', sans-serif; 
+  font-size: 16px;
+  color: #ccc;
+}
+.question input:focus::placeholder { color: transparent;}
+
+.answer input { 
+  cursor: pointer;
+  padding: 10px 0;
+  width: 100%;
+  font-family:'NotoSansCJKkr-Bold', sans-serif;
+  font-size: 18px;
+  color: #fefefe;
+  background-color:#ccc;
+  border: none;
+}
+.answer input:hover { background-color:#152c4b;}
+
+
+/* 섹션 시작 */
+#startTop { padding-top: 100px;}
+.content,
+.survey { margin: 0 auto; width: 680px;}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.content.contUp{ 
+    animation-name: fadeInUp; 
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards; 
+}
+
+.section.white { font-family:'NotoSansCJKkr-Regular'; color: #333; background-color: #F2F3F4;}
+.outro.white { padding: 100px 0; color: #333; background-color: #F2F3F4;}
+.section.white h2 { font-weight: 600;}
+.section.white h2::before { 
+  background: url(../img/icon_drop_bk.png) no-repeat center center;
+  background-size: contain;
+}
+
+.content h2 {
+  padding-bottom: 24px;
+  font-family:'SSFlowerRoad', serif;
+  font-size: 32px;
+}
+
+@keyframes h2SPAN{
+  0% { transform: translateY(2px);}
+  100% { transform: translateY(-2px);}
+}
+.content h2::before {
+  content: "";
+  display: inline-block;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon_drop_wh.png) no-repeat center center;
+  background-size: contain;
+  animation-name: h2SPAN;
+  animation-duration: 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+
+.text { text-align: left; line-height: 160%;}
+
+.chart { padding-bottom: 20px; width: 100%; height: auto; }
+.chart > img { width: 100%; height: auto; border: 1px solid rgba(201, 201, 201, 0.4);}
+
+
+/* 아웃트로 */
+.outro-wrap { margin: 0 auto; width: 680px;}
+.outro-wrap > p { 
+  font-family:'Joseonilbo', serif; 
+  font-size: 18px;
+  font-weight: 600;
+  color: #152c4b;
+  text-align: left;
+  line-height: 180%;
+}
+.outro-wrap > p::before { 
+  content: '“';
+  display: block;
+  font-size: 68px;
+}
+.outro-wrap > p::after { 
+  content: '”';
+  display: block;
+  margin-top: 24px;
+  width: 100%;
+  font-size: 68px;
+  text-align: right;
+}
+.outro-wrap .btn-wrap {
+    margin-top: 40px;
+    padding-top: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #152c4b;
+}
+.outro .btn-wrap > a {
+    padding: 8px 0 10px 0; 
+    width: 48%;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border: 4px solid #152c4b;
+    background-color: #152c4b;
+    box-sizing: border-box;
+}
+.outro .btn-wrap > a:hover { 
+    color: #333; 
+    border: 4px solid #152c4b;
+    background-color: #fff;
+    box-sizing: border-box;
+}

@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+body { position: relative; width: 100%; height: auto; background-color: rgb(255, 255, 255);}
+
+/* 비디오 백그라운드 */
+.video-wrap { position: fixed; top:0; left: 0; width: 100%; height: 100vh;}
+.video-wrap > video { 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+/* 로고 */
+.logo { position: absolute; top: 50px; right: 50px; width: 120px;}
+.logo > img { 
+    width: 100%; 
+    height: auto; 
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+
+/* 인트로 */
+.intro { 
+	position: absolute;
+  left: 50%;
+  top: 160px;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  font-family: 'BMEULJIRO', serif;
+  font-size: 80px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 4px 4px 14px #000;
+}
+.intro > p { line-height: 140%;}
+
+/**************** 메인 *****************/
+main { 
+	position: absolute; 
+	left: 50%;
+  top: 500px;
+	transform: translate(-50%, 0%);
+	margin-bottom: 100px;
+	padding: 50px 0;
+	width: 700px; 
+	height: auto; 
+  background-color: #fff;
+  box-shadow: 0px 8px 14px rgba(185, 185, 185, 0.6);
+}
+.main-wrap { margin: 0 auto; width: 600px;}
+
+/* 리드 */
+.lead p { font-family:'Joseonilbo', serif;}
+.lead p:nth-child(1) { padding: 10px 0; font-size: 28px; font-weight: 600; border-top: 10px solid #000; border-bottom: 1px solid #000; text-align: center;}
+.lead p:nth-child(2) { padding: 40px 0; font-size: 18px; border-bottom: 1px dashed #000; text-align: left;}
+
+/* 섹션 */
+.section-wrap { width: 100%; height: auto; }
+section { padding-top: 50px; width: 100%; height: auto;}
+section h2 { font-family:'Joseonilbo', serif; font-size: 20px; font-weight: 600;}
+section h2::before { 
+	content: "";
+	display: inline-block;
+	margin-right: 10px;
+	width: 24px;
+	height: 24px;
+	background: url(../img/car.png) no-repeat center center;
+	background-size: cover;
+	transform: translate(0, 5px);
+}
+.text { padding: 20px 0; color: #666; }
+
+@keyframes showLeft {
+	0% {
+	  opacity: 0;
+	  transform: translate(-10%, 0);
+	}
+  
+	100% {
+	  opacity: 1;
+	  transform: translate(0, 0);
+	}
+}
+
+@keyframes showRight {
+	0% {
+	  opacity: 0;
+	  transform: translate(10%, 0);
+	}
+  
+	100% {
+	  opacity: 1;
+	  transform: translate(0, 0);
+	}
+  }
+  
+  .content.showLeft{ 
+	  animation-name: showLeft; 
+	  animation-duration: 0.6s;
+	  animation-fill-mode: forwards; 
+  }
+
+  .content.showRight{ 
+	animation-name: showRight; 
+	animation-duration: 0.6s;
+	animation-fill-mode: forwards; 
+}
+
+.tableau { display: block; margin: 0 auto; width: 100%; height: auto; border: 1px solid rgba(201, 201, 201, 0.4);}
+.tableau > img { width: 100%; height: auto;}
+
+/* 아웃트로 */
+.outro { padding-top: 80px;}
+.outro h2 {
+	padding: 80px 0 30px 0;
+	font-family:'Joseonilbo', serif;
+	font-size: 24px;
+	font-weight: 600;
+	border-top: 1px dashed #000;
+}
+.outro > p { font-family:'Joseonilbo', serif; font-size: 18px;}
+.outro .btn-wrap {
+    padding-top: 40px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.outro .btn-wrap > a {
+    padding: 6px 0; 
+	width: 48%;
+	color: #000;
+    font-weight: 600;
+    text-align: center;
+	background-color: #fff;
+	border: 2px solid #000;
+	box-shadow: 0 0 0 #000;
+	transition: all 0.2s;
+}
+.outro .btn-wrap > a:hover { 
+    box-shadow: 0.2rem 0.2rem 0 #000;
+	transform: translate(-0.2rem, -0.2rem);
+}
+.outro .rel-wrap { 
+    margin: 20px auto 0 auto; 
+    padding: 30px;
+    width: 100%;
+    text-align: left;
+    background-color: #efefef;
+    box-sizing: border-box;
+}
+
+.outro .rel-wrap > p { 
+    padding-bottom : 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(86, 86, 86, 0.5);
+}
+.outro .rel-wrap > ul { padding-top : 10px;}
+.outro .rel-wrap > ul li { padding-top : 10px;}
+
+.outro .rel-wrap > ul li a { color: #333;}
+.outro .rel-wrap > ul li a:hover { color: #929292;}
+
+
+@media all and (max-width: 780px) { 
+
+	main { margin: 30px auto; top: 400px; width: 90%; height: auto; background: rgba(255, 255, 255, 0.92);}
+	.main-wrap { width: 90%;}
+	.lead p { font-size: 14px;}
+	.intro { top: 120px; width: 90%; font-size: 48px;}
+
+	section h2 { font-size: 18px; line-height: 140%;}
+	.outro h2 { font-size: 18px;}
+	.outro > p { font-size: 14px;}
+	.outro .btn-wrap > a { width: 45%; background: transparent; box-shadow: 0.2rem 0.2rem 0 #000;
+		transform: translate(-0.2rem, -0.2rem);}
+	
+	.logo { left: 50%; right: 0; transform: translate(-50%, 0%); width: 100px;}
+}
+
+@media all and (max-width: 500px) { 
+	main { top: 280px;}
+  .intro { font-size: 32px;}
+  .lead p:nth-child(1) { font-size: 20px;}
+
+}

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>데이터로 보는 부동산 시장</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.6, minimum-scale=1.0">
+
+
+    <link href='css/reset.css' type='text/css' rel='stylesheet'>
+    <link href='css/style.css' type='text/css' rel='stylesheet'>
+    <link href='css/media.css' type='text/css' rel='stylesheet'>
+    
+    <link rel="shortcut icon" href="img/papapa.ico">
+    
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+    <script src="js/section.js"></script>
+
+    <!-- 페이스북 공유 정보 -->
+    <meta property="og:title" content=""></meta>
+    <meta property="og:url" content=""></meta>
+    <meta property="og:description" content=""></meta>
+    <meta property="og:image" content="img/img_share.PNG"></meta> 
+
+    <!-- 카카오톡 공유 스크립트 -->
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+
+<body>
+
+    <!-- 네비게이션 -->
+    <header>
+        <nav>
+            <h2>데이터로 보는 부동산 시장</h2>
+            <ul>
+               <li><a href="#section0" class="navBt">2017년</a></li>
+               <li><a href="#section1" class="navBt">2018년</a></li>
+               <li><a href="#section2" class="navBt">2019년</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   <!-- 메인 -->
+   <main>
+       <!-- intro -->
+        <section id="intro">
+            <div class="title">
+                <p>문재인 정부 출범 이후 정책별 타임라인</p>
+                <h2>데이터로 보는 부동산 시장</h2>
+            </div>
+            <div class="scrollBt-wrap">
+                <a href="javascript:;" class="scrollBt">
+                    <span></span>
+                    <span>Scroll</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- lead -->
+        <section id="lead">
+            <div class="lead-wrap">
+                <p>
+                    최근 민간택지 분양가 상한제 시행을 위한 법적 토대가 갖춰지며 부동산 시장에 지각변동이 일어나고 있다. 국토교통부는 분양가 상한제 지정 요건 완화를 담은 ‘주택법 시행령 개정안’을 게재했으며 정식 공포·시행했다고 지난달 29일 밝혔다. 집값 상승세가 멈추지 않고 있는 서울 강남권이 첫 타깃이 될 전망이다.
+                    <br><br>
+                    올 4분기에도 치솟는 집값을 안정시키려는 문재인 정부의 부동산 규제가 계속되고 있다. 메디컬리포트는 문재인 정부의 부동산 규제와 이에 따른 집값 변천 과정을 타임라인으로 구성해봤다.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2017 -->
+        <section id="section0" class="section">
+            <div class="section-title">
+                <p>2017년</p>
+            </div>
+            <div class="section-wrap">
+
+                <div class="bar-wrap">
+                    <div class="base">
+                        <div class="progress" id="progress0">
+                            <ul class="text">
+                                <li class="show"><span>2017. 05. 10</span>문재인 정부 출범</li>
+                                <li><span>2017. 06. 19</span>6.19 대책</li>
+                                <li><span>2017. 08. 02</span>8.2 대책</li>
+                                <li><span>2017. 09. 05</span>8.2 후속 조치</li>
+                                <li><span>2017. 10. 24</span>가계부채 종합대책</li>
+                                <li><span>2017. 11. 29</span>사회통합형 사다리 구축 주거복지로드맵</li>
+                                <li><span>2017. 12. 13</span>집주인과 세입자가 상생하는 임대주택 등록 활성화 방안</li>
+                                <li><span>2017. 12. 14</span>12.14 도시재생뉴딜 시범단지 대상지 68곳 확정</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contents-wrap">
+                    <!-- 2017 part 1 -->
+                    <h3>새 정부 출범, 치솟는 '아파트 값'</h3>
+                    <p class="h3-lead">
+                        2017년 5월 10일 문재인 정부가 출범했다. 이에 얼어붙을 줄 알았던 아파트값은 예상과 달리 가파른 상승세를 보였고 거래량도 크게 늘었다. 정권 교체와 인플레이션 현상이 아파트 매매가 오름세의 주요 원인으로 꼽혔다.
+                    </p>
+
+                    <div class="chart-wrap">
+                        <p class="title">새 정부 출범 이후 서울 아파트 매매가격 주간 변동률 추이</p>
+                        <div class="chart"><img src="img/tableau1.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            국토교통부에 따르면 새 정부 출범 이전 마지막 주인 4월 28일 0.03%로 집계된 변동률은 출범 이후 5월 12일 0.15%로 상승세를 나타냈다. 특히 5월 마지막 주에는 0.45% 올라 2006년 11월 이후 최고치를 기록했다. 
+                        </p>
+                    </div>
+
+                    <div class="chart-wrap">
+                        <p class="title">새 정부 출범 이후 한 달간 서울 주요 지역 아파트 매매가격 변동률</p>
+                        <div class="chart"><img src="img/tableau2.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            서울 주요 재건축 아파트가 상승세를 주도했다. 강동구가 5.21% 올라 가장 많이 상승했다. 이어 ▲송파구(2.37%)▲서초구(1.81%)▲강남구(1.71%%) 순으로 상위권을 차지했다. 주로 재건축 단지가 몰려 있는 강남4구가 아파트값 상승을 주도했다. 
+                        </p>
+                    </div>
+
+                    <div class="chart-wrap">
+                        <p class="title">새 정부 출범 이후 서울 아파트 분양권 거래량</p>
+                        <div class="chart"><img src="img/tableau3.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            서울 아파트 분양권 거래량은 출범 이전 4월 30일까지만 해도 2,117건에 머물렀으나 5월 7일 3,006건을 넘어섰다. 새 정부 출범 이후 5월 14일 3,428건으로 7일 만에 500여 건을 돌파, 5월 21일 4,033건으로 4,000여 건대에 이르렀다.
+                        </p>
+                    </div>
+
+                    <!-- 2017 part 2 -->
+                    <h3 class="bar-text1">문재인 정부 첫 부동산 규제…진정되지 않는 집값</h3>
+                    <p class="h3-lead">
+                        2017년 6월 19일 문재인 정부는 출범 후 첫 부동산 대책을 발표했다. 그러나 6.19 대책 발표 이후 시장의 반응은 싸늘했다. 특히 강남 재건축은 눈 뜨고 일어나면 몇억 원씩 상승하는 집값 폭등 사태가 발생했다. 결국 정부는 얼마 지나지 않아 또 다른 부동산 대책을 발표했다.
+                        <br><br>
+                        6.19 대책은 급등세를 구가하던 부동산 가격을 잡기 위해 마련한 것으로 부동산을 광범위하게 규제하는 방안이 아니라 소위 ‘핏셋규제’라고 불리는 규제 방법으로 필요한 부분만 규제한 정책이다.
+                    </p>
+
+                    <div class="chart-wrap">
+                        <p class="title">6.19 대책 이후 서울 전체 아파트 주간 변동률</p>
+                        <div class="chart"><img src="img/tableau4.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            국토교통부에 따르면 6.19 대책 발표 한 달 후인 7월 3주차 서울 아파트 매매가격은 0.41% 상승하며 전주(0.29%)대비 상승폭이 확대됐다. 이로써 대책 발표 이전 6월 2주차 0.32%도 넘어섰다.
+                        </p>
+                    </div>
+
+                    <!-- 2017 part 3 -->
+                    <h3 class="bar-text2">‘규제 종합선물세트’</h3>
+                    <p class="h3-lead">
+                        2017년 8월 2일 정부는 세제, 금융, 청약, 재개발, 재건축, 관련 규제들을 총망라한 8.2 부동산 대책을 발표했다.
+                        <br><br>
+                        투기과열지구 및 투기지역 지정, 다주택 양도세 중과, 1가구 1세대 양도세 비과세 요건 강화, 청약 관련 규제 등 강력한 내용을 담고 있는 8.2 대책은 ‘규제 종합선물세트’라는 말이 나올 정도로 강력했다. 노무현 정권 때 한 번씩 나왔던 실패한 정책들이라는 비판도 있었으나 이를 한 번에 쏟아내 시장에 충격을 줄 수 있다는 시각이 우세했다.
+                        <br><br>
+                        그러나 강력한 규제에도 치솟는 아파트값을 잡기에는 역부족이었다. 서울 집값은 오히려 8.2 대책이 나오기 전보다 많이 올랐으며 양극화 현상은 더 심해졌다.
+                    </p>
+
+                    <div class="chart-wrap">
+                        <p class="title">8.2 대책 전후 1년간 아파트 매매가격 상승률 상위 10개 지역</p>
+                        <div class="chart"><img src="img/tableau5.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            우선 가장 많이 오른 지역은 성남시 분당구로 8.2 대책 이후 14%가량 상승한 것으로 나타났다. 이어 상승률 2위 지역은 서울시 송파구(11.53%), 서울시 용산구(8.76%), 서울시 광진구(8.58%), 대구시 수성구(8.44%) 등 순으로 집계됐다.
+                        </p>
+                    </div>
+
+                    <div class="chart-wrap">
+                        <p class="title">2017년 8.2대책 이후 서울 해당 '구'별 평균 매매가</p>
+                        <div class="chart"><img src="img/tableau6.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            투자시장은 정부의 정책에 쉽게 휘둘리기 마련이니 주택 거래량이 크게 감소한 것은 어찌보면 당연한 일이라고 할 수 있다.
+                            <br><br>
+                            이에 따른 풍선효과로 토지투자 시장이 부흥하고 있다. 풍선효과란 풍선의 한쪽을 누르면 다른 쪽이 부풀어 오르듯 한 곳의 규제가 다른 곳의 부흥을 이끌어내는 현상을 말한다. 정부 규제로 많은 아파트 투자자들의 쌈짓돈이 흐르게 됐다.
+                        </p>
+                    </div>
+
+                    <div class="bar-text3 blank"><p><span>2017. 09. 05</span>8.2 후속 조치</p></div>
+                    <div class="bar-text4 blank"><p><span>2017. 10. 24</span>가계부채 종합대책</p></div>
+                    <div class="bar-text5 blank"><p><span>2017. 11. 29</span>사회통합형 사다리 구축 주거복지로드맵</p></div>
+                    <div class="bar-text6 blank"><p><span>2017. 12. 13</span>집주인과 세입자가 상생하는 임대주택 등록 활성화 방안</p></div>
+                    <div class="bar-text7 blank"><p><span>2017. 12. 14</span>12.14 도시재생뉴딜 시범단지 대상지 68곳 확정</p></div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2018 -->
+        <section id="section1" class="section">
+            <div class="section-title">
+                <p>2018년</p>
+            </div>
+            <div class="section-wrap">
+
+                <div class="bar-wrap">
+                    <div class="base">
+                        <div class="progress" id="progress1">
+                            <ul class="text">
+                                <li class="show"><span>2018. 07. 05</span>신혼부부·청년 주거지원 방안</li>
+                                <li><span>2018. 08. 27</span>8.27 대책</li>
+                                <li><span>2018. 08. 29</span>실수요자 주거 안정을 위한 금융지원 방안</li>
+                                <li><span>2018. 08. 31</span>2018 도시재생 뉴딜사업 선정</li>
+                                <li><span>2018. 09. 13</span>9.13 주택시장 안정 대책</li>
+                                <li><span>2018. 09. 21</span>수도권 주택공급 확대 방안 및 3기 신도시 1차 발표</li>
+                                <li><span>2018. 10. 11</span>9.13 후속조치</li>
+                                <li><span>2018. 12. 19</span>3기 신도시 2차 발표</li>
+                                <li><span>2018. 12. 28</span>조정대상지역 조정을 위한 시장안정 기조 강화</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="contents-wrap">
+
+                    <div class="bar-text8 blank"><p><span>2018. 07. 05</span>신혼부부·청년 주거지원 방안</p></div>
+
+                    <!-- 2018 part 1 -->
+                    <h3 class="bar-text9">8.27 대책, 현장은 지금?</h3>
+                    <p class="h3-lead">
+                        2018년 8월 27일 여의도, 용산, 강북 등 개발 이슈가 연이어 터지면서 서울 집값이 급등하자 정부가 규제 카드를 또 꺼내 들었다. 그러나 8.27 부동산 대책이 발표된지 보름 만에 시장은 크게 흔들렸다. 특히 규제를 피한 지역에서 두드러졌다.
+                        <br><br>
+                        8.27 대책은 원활한 수급을 위해 수도권 내에 공공택지를 추가 개발하고 투기과열지구 등 규제지역을 추가로 지정하는 내용이다.
+                    </p>
+
+                    <div class="chart-wrap">
+                        <p class="title">서울 아파트값 주간 상승률</p>
+                        <div class="chart"><img src="img/tableau7.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            8.27 대책 발표 후 한 주간 아파트값 상승률을 조사한 결과, 규제를 피한 지역의 움직임이 심상치 않은 것으로 조사됐다. 대책 발표 전 한 주간 중랑구와 은평구가 전주대비 각각 0.71%p, 0.52%p 상승하며 서울 25개 지자체 중 가장 큰 폭 상승했다.
+                            <br><br>
+                            북구, 광진구, 중구도 상위권에 이름을 올리며 전주대비 상승폭을 키웠다. 이들 지역은 이번 발표된 대책에서 지정된 추가 투기지역에서 배제된 지역이다.
+                        </p>
+                    </div>
+
+                    <div class="chart-wrap">
+                        <p class="title">경기도 아파트값 주간 상승률</p>
+                        <div class="chart"><img src="img/tableau8.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            경기도 상황도 마찬가지였다. 안양시 동안구가 조정대상지역으로 추가 지정된 가운데 규제에서 빗겨간 바로 옆 동네 안양시 만안구 아파트값이 전주대비 0.41%p로 상승했다. 이는 같은 기간 동안구(0.26%)보다 2배가량 오른 것이다. 투기지역에서 빠진 과천 역시 전주대비 0.72%p 오르며 지난주 가장 많이 상승한 지역에 이름을 올렸다.
+                        </p>
+                    </div>
+
+                    <div class="bar-text10 blank"><p><span>2018. 08. 29</span>실수요자 주거 안정을 위한 금융지원 방안</p></div>
+                    <div class="bar-text11 blank"><p><span>2018. 08. 31</span>2018 도시재생 뉴딜사업 선정</p></div>
+
+                    <!-- 2018 part 2 -->
+                    <h3 class="bar-text12">약발 다한 9.13 대책</h3>
+                    <p class="h3-lead">
+                        2018년 9월 13일 정부는 ‘9.13 주택시장 안정 방안’을 발표했다. 국토교통부가 8.27 부동산 대책을 발표한지 겨우 보름만에 발표돼 대중의 관심을 끌었다.
+                        <br><br>
+                        9.13 대책은 부동산 가격을 잡기 위한 연속 시리즈라고 볼 수 있다. 핵심은 종합부동산세의 증세를 통해 고가 주택 보유자나 다주택 보유 부담을 증가시키고, 주택 보유 세대의 주택 관련 대출을 차단하거나 규제를 강화해 추가적 주택 구매를 막겠다는 것이다.
+                        <br><br>
+                        그러나 서울 아파트 거래량이 감소세를 보이는 등 서울 주택시장이 위축되면서 투자 수요가 저평가됐다.
+                    </p>
+
+                    <div class="chart-wrap">
+                        <p class="title">서울 아파트 매매 거래량 월별 추이</p>
+                        <div class="chart"><img src="img/tableau9.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            9월 이후 거래량은 감소세를 나타냈다. 국토교통부 실거래가 공개시스템에 따르면 10월 매매 계약이 체결된 서울 아파트는 1,626건으로 집계됐다. 계약 시점과 신고일이 다를 수 있다는 변수도 있으나 10월 거래량은 9월(7,042건)과 8월(1만4,997건)에 비하면 급감한 것을 알 수 있다.
+                        </p>
+                    </div>
+
+                    <div class="bar-text13 blank"><p><span>2018. 09. 21</span>수도권 주택공급 확대 방안 및 3기 신도시 1차 발표</p></div>
+                    <div class="bar-text14 blank"><p><span>2018. 10. 11</span>9.13 후속조치</p></div>
+                    <div class="bar-text15 blank"><p><span>2018. 12. 19</span>3기 신도시 2차 발표</p></div>
+                    <div class="bar-text16 blank"><p><span>2018. 12. 28</span>조정대상지역 조정을 위한 시장안정 기조 강화</p></div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2019 -->
+        <section id="section2" class="section">
+            <div class="section-title">
+                <p>2019년</p>
+            </div>
+            
+            <div class="section-wrap">
+                
+                <div class="bar-wrap">
+                    <div class="base">
+                        <div class="progress" id="progress2">
+                            <ul class="text">
+                                <li class="show"><span>2019. 05. 07</span>3기 신도시 3차 발표</li>
+                                <li><span>2019. 08. 12</span>분양가 상한제 발표</li>
+                                <li><span>2019. 10. 01</span>10.1 대책</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contents-wrap">
+
+                    <!-- 2019 part 1 -->
+                    <h3 class="bar-text17">본궤도 오른 3기 신도시…추가발표로 기세 꺾여</h3>
+                    <p class="h3-lead">
+                        2019년 5월 7일 여의도 면적의 8배에 달하는 대규모 공공택지 5곳의 지구지정을 시작으로 수도권 3기 신도시 건설이 본궤도에 올랐다.
+                        <br><br>
+                        그러나 3기 신도시 발표 영향으로 수도권 아파트값이 일제히 하락했다. 여기에 3기 신도시 지정을 놓고 정부와 개발 예정지 및 기존 1·2기 신도시 주민들이 여전히 평행선을 달리고 있어 사업이 순조롭게 진행될지 우려 섞인 목소리가 나온다.
+                    </p>
+
+                    <div class="chart-wrap">
+                        <p class="title">서울 및 신도시 매매가격 변동률</p>
+                        <div class="chart"><img src="img/tableau10.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            3기 신도시 후보지 발표의 영향을 받은 건지 수도권 아파트 가격 하락세가 뚜렷했다. 특히 서울의 재건축 아파트 가격이 몇 주 연속 상승해 기대가 컸으나 이 역시 상승률이 떨어졌다.
+                            <br><br>
+                            전체적으로는 서울의 경우 –0.02%, 수도권 신도시의 경우 -0.03% 하락한 것으로 나타났다. 5월 초에 잘 나가던 분위기를 5월 7일 3기 신도시 발표로 확 꺾였다.
+                        </p>
+                    </div>
+
+                    <div class="chart-wrap">
+                        <p class="title">지역별 주간 아파트 가격 변동률</p>
+                        <div class="chart"><img src="img/tableau11.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            전세가격도 전반적으로 하락세를 이어갔다. 서울은 매매가격이 –0.02%, 전세가격이 -0.01%의 변동률을 보였고 신도시는 매매와 전세 모두 –0.03%의 변동률을 기록했다. 신도시를 제외한 인천 경기 지역은 매매가격이 -0.01%로 비교적 낮은 하락세, 전세는 –0.05%로 떨어졌다.
+                        </p>
+                    </div>
+
+                    <div class="chart-wrap">
+                        <p class="title">서울 주요 지역 주간 매매가격 변동률</p>
+                        <div class="chart"><img src="img/tableau12.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            서울 주요 지역 매매 가격변동률의 경우 마포구가 –0.35%를 기록하면서 대폭 빠졌다. 이어 강북구와 송파구가 각각 -0.03% 포인트 떨어졌고 강서구 서초구 영등포구가 –0.02% 하락했다.
+                        </p>
+                    </div>
+
+                    <div class="bar-text18 blank"><p><span>2019. 08. 12</span>분양가 상한제 발표</p></div>
+
+                    <!-- 2019 part 2 -->
+                    <h3 class="bar-text19">집값 내리고 싶은 정부 맞나?…매매·전세값 상승세 계속</h3>
+                    <p class="h3-lead">
+                        민간택지에 분양가 상한제를 적용한다는 소식에 투자자들의 관심이 강남 신규아파트로 쏠리자 정부는 2019년 10월 1일 ‘10.1 대책’을 발표했다. 그러나 10.1 보완대책에도 전국 아파트 매매가격과 전세가격은 동시에 상승세를 보였다.
+                    </p>
+
+                    <div class="chart-wrap">
+                        <p class="title">주간 아파트 매매가격지수 변동률</p>
+                        <div class="chart"><img src="img/tableau13.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            아파트 매매가격은 0.01% 상승하고 전세가격은 0.04% 상승했다. 전체적으로 매매가 상승지역과 하락지역 수는 증가했지만 보합지역은 31개에서 10개로 줄었다. 부동산 시장의 불안감만 지속되고 있는 상황이다.
+                        </p>
+                    </div>
+
+                    <div class="chart-wrap">
+                        <p class="title">주간 아파트 전세가격지수 변동률</p>
+                        <div class="chart"><img src="img/tableau14.PNG" alt="태블로 차트"></div>
+                        <p class="text">
+                            전국 주간 아파트 전세가격은 상승폭을 유지했다. 서울과 수도권 지역의 전셋값은 떨어질 기미가 보이지 않는다.
+                        </p>
+                    </div>
+
+                </div>
+        </section>
+
+        <!-- outro -->
+        <section id="outro">
+            <div class="outro-wrap">
+                <p>
+                    분양가 상한제 발표 이후 집값 불안이 계속되면 추가 규제를 내놓을 전망이 나오고 있는 반면, 그간 워낙 많은 규제를 쏟아낸 탓에 추가 안정대책 마련이 현실적으로 쉽지 않을 것이란 분석도 나온다.
+                    <br><br>
+                    실제 더 강한 규제 카드는 여럿 있으나 대부분이 현실적인 대안은 아니라는 게 문제다. 저금리 기조가 장기화되고, 투자처를 찾지 못한 유동자금이 지속적으로 부동산 시장에 쏠리고 있어 대책 효과가 미미할 가능성이 크다.
+                    <br><br>
+                    향후 부동산 시장은 안정세를 찾아 서민들의 손을 잡아줄까. 아니면 더 멀리 달아날까.
+                </p>
+                <div class="btn-wrap">
+                    <a href="#" class="newsBt">기사로 돌아가기</a>
+                    <a href="#" class="homeBt">홈으로 가기</a>
+                </div>
+                <div class="share-wrap">
+                    <button type="button" class="share_facebook">페이스북 공유</button>
+                    <button type="button" class="share_twitter">트위터 공유</button>
+                    <button type="button" class="share_kakao">카카오톡 공유</button>
+                    <button type="button" class="share_url">URL 공유</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 클립보드 URL 복사 인풋 -->
+        <input id="current_url" value="" style="position: absolute; top: 0; left: -1000px;">
+
+
+        <script src="js/share.js"></script>
+        <script type="text/javascript">
+            $(".newsBt").click(() => {
+                window.top.location.href = "http://medicalreport.kr/news/view/220750"
+            })
+            $(".homeBt").click(() => {
+                window.top.location.href = "http://medicalreport.kr/"
+            })
+        </script>
+        
+   </main>
+   
+   <!-- goTop -->
+   <div class="goTopBt-wrap">
+        <a href="javascript:;" class="goTopBt">↑</a>
+    </div>
+
+</body>
+
+</html>

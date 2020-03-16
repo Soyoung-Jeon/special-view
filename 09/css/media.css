@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* 반응형 */
+
+/* 모바일 대응 ( 414*869 ) */
+
+@media all and (max-width: 780px) { 
+
+    .intro .logo {
+        position: absolute;
+        bottom: 40px;
+        right: 80px;
+        width: 80px;
+    }
+    .intro .box_title { width: 300px; text-align: center;}
+    .intro .box_title p:nth-child(1) { font-size: 32px;}
+    .intro .box_title p:nth-child(2) { padding-top: 14px; font-size: 21px; text-align: center;}
+    .intro .btn_wrap { padding-top: 28px;}
+    .btn_detailView { 
+        font-size: 14px;
+        box-shadow: 0.2rem 0.2rem 0 black;
+        transform: translate(-0.2rem, -0.2rem);
+    }
+    
+    .lead p { width: 80%; font-size: 12px;}
+    .lead p > span { font-size: 14px;}
+    .content { width: 80%; font-size: 12px;}
+    .content h2 { 
+        width: 100%;
+        box-sizing: border-box;
+        left: 0px;
+        top: 0px;
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        border: 0px;
+        border-bottom: solid 2px #000;
+        line-height: 150%;
+        transform: skew(0deg);
+    }
+    .outro-wrap { width: 80%;}
+    .outro-wrap > h2 { font-size: 20px; line-height: 150%;}
+    .outro-wrap > p { font-size: 12px;}
+    .outro .btn-wrap > a {
+        width: 46%; font-size: 12px;
+        box-shadow: 0.2rem 0.2rem 0 black;
+        transform: translate(-0.2rem, -0.2rem);
+    }
+
+    #section-02 .mtableau,
+    #section-04 .mtableau,
+    #section-05 .mtableau,
+    #section-06 .mtableau { margin: 70px auto 30px auto;}
+
+    #section-03 .interviewer { flex-wrap: wrap; padding: 30px 0 10px 0;}
+    #section-03 .interviewer li { width: 50%;}
+    #section-03 .interviewer li p { font-size: 10px;}
+    #section-03 .bubble { padding: 20px;}
+    #section-03 .bubbleAfter { 
+        margin: 0 auto;
+        transform: translate(0px, 4px);
+    }
+
+    #section-06 .interviewer { margin-top: 40px; padding-top: 20px;}
+    #section-06 .interviewer li { display: block;}
+    #section-06 .interviewer .profile { width: 100%;}
+    #section-06 .interviewer .profile img { width: 120px; height: auto;}
+    #section-06 .bubble { padding: 0 20px; width: 100%; top: 15px;}
+    #section-06 .bubble::before {
+        top: -16px;
+        left: 50%;
+        margin-left: -14px;
+        transform: rotate(0deg);
+    }
+    
+    #section-06 .interviewer li:nth-child(1) .bubble > p { padding: 28px 0 !important;}
+
+    .outro { padding-bottom: 200px;}
+    .rel-wrap { margin: 30px auto 0 auto;}
+    .rel-wrap > ul li { 
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; 
+    }
+}
