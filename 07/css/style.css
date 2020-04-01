@@ -230,7 +230,7 @@ main { overflow: hidden; position: relative; width: 100%; height: 100vh; text-al
         position: relative; 
         width: 100%; 
         height: 100vh;
-        background-image: url(../img/img_outro.jpg);
+        background-image: url(../img/img_outro.png);
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
